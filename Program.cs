@@ -28,4 +28,12 @@ while (!int.TryParse(Console.ReadLine(), out opcion) || opcion < 1 || opcion > 4
 {
     Console.Write("No ha ingresado una opción válida. Por favor, inténtelo de nuevo: ");
 }
+// Realizamos la operación correspondiente y mostramos el resultado
+double resultado = 0;
+switch (opcion)
+{
+    case 1:
+        resultado = numero1 + numero2;
+        break;
+
 
