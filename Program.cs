@@ -38,6 +38,18 @@ switch (opcion)
     case 2:
         resultado = numero1 - numero2;
         break;
+    case 3:
+        while (numero2 == 0)
+        {
+            Console.Write("No se puede dividir entre cero. Por favor, ingrese un segundo número diferente de cero: ");
+            while (!double.TryParse(Console.ReadLine(), out numero2))
+            {
+                Console.Write("No ha ingresado un número válido. Por favor, inténtelo de nuevo: ");
+            }
+        }
+        resultado = numero1 / numero2;
+        break;
+
 
 
 
