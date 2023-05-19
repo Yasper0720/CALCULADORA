@@ -35,5 +35,9 @@ switch (opcion)
     case 1:
         resultado = numero1 + numero2;
         break;
+    case 2:
+        resultado = numero1 - numero2;
+        break;
+
 
 
